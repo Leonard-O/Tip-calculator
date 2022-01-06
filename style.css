@@ -1,77 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .attribution {
     font-size: 11px;
     text-align: center;
+    background-color: hsl(0, 0%, 100%);
+    padding: 0.5rem;
+    margin: 0 18.5rem;
+    border-radius: 0.5rem;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-color: hsl(185, 41%, 84%);
 }
 
-.container {
-    /* background-color: hsl(185, 41%, 84%); */
-    padding: 10em 20em;
-    /* height: 100vh; */
-}
-
 .header {
-    width: 100px;
+    width: 7rem;
     margin: auto;
-    padding-bottom: 5em;
+    margin-top: 5rem;
 }
 
-.logo {
-    padding: 0, 20px;
-}
-
-.main {
+.container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    width: 40rem;
+    margin: 5rem auto 0.5rem;
     background-color: hsl(0, 0%, 100%);
-    width: 650px;
-    margin: auto;
-    border-radius: 1em;
+    padding: 1.5rem;
+    border-radius: 1rem;
 }
-
-
-/* Start of left */
 
 .left {
-    margin: 2em;
-    /* background-color: yellow; */
+    padding: 1.5rem 0;
+    border-radius: 1rem;
 }
 
-.div-1,
-.div-2 {
-    padding-bottom: 1em;
-}
-
-.input-1,
-.input-2 {
+.input-field {
     display: flex;
-    background-color: hsl(189, 41%, 97%);
-    border-radius: 0.2em;
     align-content: center;
-    padding: 0.4em;
-    margin-top: 0.4em;
-    cursor: pointer;
+    margin-top: 0.5rem;
+    padding: 0.51rem;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 0.2rem;
 }
 
 .input-1:hover {
     background-color: hsl(185, 41%, 84%);
+    cursor: pointer;
 }
 
-.icon-1,
-.icon-2 {
-    padding-right: 1em;
+.icon-1 {
+    padding-right: 0.5rem;
 }
 
 input {
@@ -79,144 +64,105 @@ input {
     background: none;
 }
 
-.bill {
-    padding-left: 1em;
-}
-
-.people {
-    padding-left: 3em;
-    text-align: right;
-}
-
 .div-2 {
-    padding-top: 1em;
+    margin-top: 1.5rem;
 }
 
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0.5em;
-    margin-top: 0.5em;
-    margin-bottom: 2em;
+    grid-gap: 0.5rem;
+    margin-top: 0.5rem;
 }
 
-.btn-1,
-.btn-2,
-.btn-3,
-.btn-4,
-.btn-5,
-.btn-6 {
-    padding: 0.5em 1em;
-    border: none;
-    border-radius: 0.2em;
-    cursor: pointer;
+.btn {
     background-color: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    color: hsl(185, 41%, 84%);
+}
+
+h4 {
+    color: hsl(186, 14%, 43%);
+}
+
+.lf {
     color: hsl(189, 41%, 97%);
 }
 
+p {
+    color: hsl(186, 14%, 43%);
+}
+
+h1 {
+    color: hsl(172, 67%, 45%);
+}
+
+.btn:hover {
+    background-color: hsl(172, 67%, 45%);
+    cursor: pointer;
+}
+
 .btn-6 {
-    padding: 0.5em 1em;
-    border: none;
-    border-radius: 0.2em;
     background-color: hsl(189, 41%, 97%);
     color: hsl(186, 14%, 43%);
 }
 
-.btn-1:hover,
-.btn-2:hover,
-.btn-3:hover,
-.btn-4:hover,
-.btn-5:hover {
-    background-color: hsl(185, 41%, 84%);
-    color: hsl(183, 100%, 15%);
-}
-
 .btn-6:hover {
     background-color: hsl(185, 41%, 84%);
-    color: hsl(183, 100%, 15%);
+    cursor: pointer;
 }
 
-
-/* .input-2:hover {
-    background-color: hsl(185, 41%, 84%);
-    border: 0.1em solid red;
-} */
-
-
-/* End of left */
-
-
-/* Start of Right */
+.div-3 {
+    margin-top: 1.5rem;
+}
 
 .right {
-    margin: 2em;
-    padding: 1em;
-    border-radius: 0.4em;
     background-color: hsl(183, 100%, 15%);
+    padding: 1.5rem;
+    border-radius: 1rem;
 }
 
-.amount,
-.total {
+.div-4 {
     display: flex;
-}
-
-.amount {
-    padding-bottom: 2em;
-}
-
-.total {
-    padding-bottom: 5em;
+    align-content: center;
+    /* justify-content: space-between; */
 }
 
 .tip {
-    padding-right: 5em;
+    padding-right: 6rem;
 }
 
-.tip>h2 {
-    color: hsl(189, 41%, 97%);
+.div-5 {
+    display: flex;
+    align-content: center;
+    margin-top: 2rem;
+    /* justify-content: space-between; */
 }
 
-.tip>h4 {
-    color: hsl(186, 14%, 43%);
+.total {
+    padding-right: 8.3rem;
 }
 
-.total-amount>h2 {
-    color: hsl(189, 41%, 97%);
+.div-6 {
+    display: flex;
+    align-content: center;
+    margin-top: 9rem;
+    /* justify-content: space-between; */
 }
 
-.total-amount>h4 {
-    color: hsl(186, 14%, 43%);
-}
 
-.total-amount {
-    padding-right: 9.5em;
-}
-
-.amount>h2 {
-    color: hsl(172, 67%, 45%);
-}
-
-.total>h2 {
-    color: hsl(172, 67%, 45%);
-}
+/* .reset {
+    width: 9rem;
+    margin: auto;
+} */
 
 .btn-7 {
-    padding: 0.5em 8em;
-    border: none;
-    border-radius: 0.2em;
-}
-
-.btn-7:hover {
     background-color: hsl(185, 41%, 84%);
-}
-
-
-/* End of right */
-
-
-/* footer */
-
-.footer {
-    /* background-color: hsl(0, 0%, 100%); */
-    margin-top: 0.5em;
+    border: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem 7rem;
+    color: hsl(183, 100%, 15%);
+    cursor: pointer;
 }
