@@ -2,86 +2,88 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Real Code Devs | Tip calculator app</title>
-
-
-
 </head>
 
 <body>
-
     <div class="header">
-        <img src="images/logo.svg" alt="" class="logo">
+        <img src="images/logo.svg" alt="" class="logo" />
     </div>
 
     <div class="container">
-        <div class="left">
-            <div class="div-1">
-                <h4>Bill</h4>
-                <div class="input-field input-1">
-                    <img src="images/icon-dollar.svg" alt="" class="icon-1">
-                    <input type="text">
+        <main>
+            <div class="left">
+                <div class="div-1">
+                    <h4>Bill</h4>
+                    <div class="input">
+                        <img src="images/icon-dollar.svg" alt="" class="icon-1" />
+                        <input class="inputField" id="bill" placeholder="0" type="text" />
+                    </div>
                 </div>
-            </div>
-            <div class="div-2">
-                <h4>Select Tip %</h4>
-                <div class="grid">
-                    <button class="btn btn-1">5%</button>
-                    <button class="btn btn-2">10%</button>
-                    <button class="btn btn-3">15%</button>
-                    <button class="btn btn-4">25%</button>
-                    <button class="btn btn-5">50%</button>
-                    <button class="btn btn-6">Custom</button>
+                <div class="div-2">
+                    <h4>Select Tip %</h4>
+                    <div class="btn-grid">
+                        <button class="btn btn-1">5%</button>
+                        <button class="btn btn-2">10%</button>
+                        <button class="btn btn-3">15%</button>
+                        <button class="btn btn-4">25%</button>
+                        <button class="btn btn-5">50%</button>
+                        <input type="text" id="custom" placeholder="Custom" />
+                    </div>
+                </div>
+
+                <div class="div-3">
+                    <div class="top">
+                        <h4>Number of People</h4>
+                        <h4 class="hide">Can't be zero</h4>
+                    </div>
+                    <div class="input" id="input-2">
+                        <img src="images/icon-person.svg" alt="" class="icon-1" />
+                        <input class="inputField" id="number" placeholder="0" type="text" />
+                    </div>
                 </div>
             </div>
 
-            <div class="div-3">
-                <h4>Number of People</h4>
-                <div class="input-field input-2">
-                    <img src="images/icon-person.svg" alt="" class="icon-1">
-                    <input type="text">
+            <div class="right">
+                <div class="div-4">
+                    <div class="tip">
+                        <h4>Tip Amount</h4>
+                        <p>/Person</p>
+                    </div>
+                    <h1 id="tip-amount">$ 0.00</h1>
                 </div>
-            </div>
-        </div>
 
-        <div class="right">
-            <div class="div-4">
-                <div class="tip">
-                    <h4 class="lf">Tip Amount</h4>
-                    <p>/Person</p>
+                <div class="div-5">
+                    <div class="total">
+                        <h4>Total</h4>
+                        <p>/Person</p>
+                    </div>
+                    <h1 id="total">$ 0.00</h1>
                 </div>
-                <h1>$ 0.00</h1>
-            </div>
 
-            <div class="div-5">
-                <div class="total">
-                    <h4 class="lf">Total</h4>
-                    <p>/Person</p>
-                </div>
-                <h1>$ 0.00</h1>
-            </div>
-
-            <div class="div-6">
                 <div class="reset">
-                    <button class="btn-7">RESET</button>
+                    <button id="reset">RESET</button>
                 </div>
             </div>
-        </div>
+        </main>
     </div>
 
     <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/Leonard-O/tip-calculator" target="_blank">Zannoh @ Real Code Developers</a>.
-    </div>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
+			>. Coded by
+			<a href="https://github.com/Leonard-O/tip-calculator" target="_blank"
+				>Zannoh @ Real Code Developers</a
+			>
+		</div>
 
-
-
-</body>
-
+		<script src="main.js"></script>
+	</body>
 </html>
