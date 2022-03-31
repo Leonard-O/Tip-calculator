@@ -59,6 +59,7 @@ main {
 .div-1 {
     max-width: 20rem;
     padding: 1rem;
+    font-size: 0.7rem;
 }
 
 input {
@@ -72,6 +73,13 @@ input {
     width: 20rem;
     outline: none;
     background: hsl(189, 41%, 97%);
+}
+
+.inputField {
+    color: hsl(183, 100%, 15%);
+    text-align: right;
+    font-size: 15px;
+    /* font-weight: 700; */
 }
 
 input:hover {
@@ -95,7 +103,7 @@ input::placeholder {
 }
 
 #input-2:hover {
-    outline: 0.1rem solid red;
+    outline: 0.1rem solid hsl(172, 67%, 45%);
 }
 
 img {
@@ -106,6 +114,7 @@ img {
 .div-2 {
     max-width: 20rem;
     padding: 1rem;
+    font-size: 0.7rem;
 }
 
 .btn-grid {
@@ -117,7 +126,7 @@ img {
 .btn {
     background: hsl(183, 100%, 15%);
     color: hsl(0, 0%, 100%);
-    padding: 0.5rem;
+    padding: 0.6rem;
     border: none;
     border-radius: 0.2rem;
 }
@@ -144,6 +153,7 @@ img {
 
 #custom {
     width: 6rem;
+    padding: 0.2rem;
     text-align: center;
     background: hsl(185, 41%, 84%);
     color: hsl(184, 14%, 56%);
@@ -195,7 +205,15 @@ img {
     margin-bottom: 7rem;
 }
 
-.div-4>h1,
+
+/* .amount {
+    background-color: red;
+    max-width: 10rem;
+    min-height: 20rem;
+    overflow: hidden;
+} */
+
+.amount>h1,
 .div-5>h1 {
     color: hsl(172, 67%, 45%);
 }
@@ -209,6 +227,10 @@ img {
 .tip>p,
 .total>p {
     color: hsl(184, 14%, 56%);
+}
+
+.amount {
+    display: flex;
 }
 
 .reset {
